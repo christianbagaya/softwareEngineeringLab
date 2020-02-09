@@ -44,9 +44,10 @@ class myClock():
 
 
 def main():
-    time = input("Enter the full date of the alarm in format YYYY-mm-dd HH:MM:SS")
+    # import pdb; pdb.set_trace()
+    t = raw_input("Enter the full date of the alarm in format YYYY-mm-dd HH:MM:SS : ")
     clock = myClock("Christian Bagaya", 24, 2)
     clock.show_time_of_day()
-    clock.set_alert(time)
+    clock.set_alert(t)
 
 main()
